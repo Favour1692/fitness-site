@@ -1,5 +1,7 @@
-import { navlinks, reviews } from "./type";
-// import { FaClock } from "react-icons/fa";
+import { navlinks, reviews, programs } from "./type";
+import { FaCalendarAlt, FaBolt, FaHome } from "react-icons/fa";
+import { LuDumbbell } from "react-icons/lu";
+import { benefit } from "./type";
 
 export const navdata: navlinks[] = [
   {
@@ -54,53 +56,67 @@ export const testimonial: reviews[] = [
   },
 ];
 
-// export const benefits: benefit[] = [
-//   {
-//     id: 1,
-//     icon: <FaClock />,
-//     title: "open early, close late",
-//     description: "Work out whenever it works for you",
-//   },
-//   {
-//     id: 2,
-//     icon: <FaClock />,
-//     title: "expert trainers",
-//     description: "Real coaching, smart training",
-//   },
-//   {
-//     id: 3,
-//     icon: <FaClock />,
-//     title: "flexible memberships",
-//     description: "Monthly, quaterly or drop-in options",
-//   },
-//   {
-//     id: 4,
-//     icon: <FaClock />,
-//     title: "Results-driven programs",
-//     description: "Tailored to match every fitness level",
-//   },
-//   {
-//     id: 5,
-//     icon: <FaClock />,
-//     title: "Group and solo options",
-//     description: "Train how you prefer",
-//   },
-//   {
-//     id: 6,
-//     icon: <FaClock />,
-//     title: "clean and spacious facility",
-//     description: "Workout in comfort and safety",
-//   },
-//   {
-//     id: 7,
-//     icon: <FaClock />,
-//     title: "nutritional coaching available",
-//     description: "Fuel your progress",
-//   },
-//   {
-//     id: 8,
-//     icon: <FaClock />,
-//     title: "supportive community",
-//     description: "You're never alone",
-//   },
-// ];
+export const benefits: benefit[] = [
+  {
+    id: 1,
+    icon: <FaHome />,
+    title: "clean and spacious facility",
+    description: "Workout in comfort and safety",
+  },
+  {
+    id: 2,
+    icon: <LuDumbbell />,
+    title: "expert trainers",
+    description: "Real coaching, smart training",
+  },
+  {
+    id: 3,
+    icon: <FaCalendarAlt />,
+    title: "flexible memberships",
+    description: "Monthly, quaterly or drop-in options",
+  },
+  {
+    id: 4,
+    icon: <FaBolt />,
+    title: "Results-driven programs",
+    description: "Tailored to match every fitness level",
+  },
+];
+
+export const program: programs[] = [
+  {
+    id: 1,
+    image: "/hiit.webp",
+    title: "strength and conditioning",
+  },
+  {
+    id: 2,
+    image: "/hiit.webp",
+    title: "functional mobility and flexibility",
+  },
+  {
+    id: 3,
+    image: "/hiit.webp",
+    title: "HIIT and cardio burnouts",
+  },
+  {
+    id: 4,
+    image: "/hiit.webp",
+    title: "personal training and coaching",
+  },
+  {
+    id: 5,
+    image: "/hiit.webp",
+    title: "nutrition and wellness coaching",
+  },
+  {
+    id: 6,
+    image: "/hiit.webp",
+    title: "group fitness classes",
+  },
+  {
+    id: 7,
+    image: "/hiit.webp",
+    title: "yoga and flexibility",
+  },
+];

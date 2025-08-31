@@ -16,7 +16,7 @@ const RootLayout = ({ children }: LayoutProp) => {
           <header>
             <Navbar />
           </header>
-          <main>{children}</main>
+          <main className="bg-fog dark:bg-charcoal">{children}</main>
           <footer>
             <Footer />
           </footer>

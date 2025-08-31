@@ -8,9 +8,8 @@
   --color-amber: #ffb400;
   --color-fog: #f4f4f5;
   --color-charcoal: #1c1c1e;
-  --color-creamy: #f8f0e3;
   --color-steelgray: #3a3a3c;
-  --color-burnt: #c48a03;
+  --color-burntblue: #03486e;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-12 items-center">
           <div className="flex gap-4 text-lg items-center">
             {navdata.map((data) => (
-              <Link key={data.id} href={data.href} className="text-lg lg:text-xl text-charcoal dark:text-creamy hover:text-crimson dark:hover:text-crimson transition-all duration-500 font-medium">
+              <Link key={data.id} href={data.href} className="text-lg lg:text-xl text-charcoal dark:text-fog hover:text-crimson dark:hover:text-crimson transition-all duration-500 font-medium">
                 {data.title}
               </Link>
             ))}
@@ -46,7 +46,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden fixed left-0 top-0 w-[80%] h-full sm:w-full sm:h-auto sm:rounded-bl-xl sm:rounded-br-xl bg-creamy">
+        <div className="md:hidden fixed left-0 top-0 w-[80%] h-full sm:w-full sm:h-auto sm:rounded-bl-xl sm:rounded-br-xl bg-fog">
           <div className="flex flex-col gap-6 text-lg py-12 sm:pt-12 sm:pb-16 px-8 sm:px-12">
             {navdata.map((data) => (
               <Link key={data.id} href={data.href} className="text-lg text-crimson hover:text-burnt transition-all duration-500">
