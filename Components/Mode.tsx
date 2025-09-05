@@ -20,8 +20,8 @@ const Mode = () => {
 
   return (
     <Button variant="ghost" size="icon" onClick={handleToggle}>
-      <LuMoon className="absolute text-3xl scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-      <LuSun className="text-3xl scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90 text-darkblue" />
+      <LuMoon className="absolute text-3xl scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0 text-fog" />
+      <LuSun className="text-3xl scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90 text-crimson" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   );

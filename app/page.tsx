@@ -19,23 +19,19 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <section className="">
+    <section className="overflow-x-hidden">
       {/* hero section */}
       <div className="w-full h-screen bg-[url('/mobile.webp')] lg:bg-[url('/landing.webp')] bg-cover bg-no-repeat bg-center">
         <div className="w-full h-full bg-[#333]/30">
           <div className="max-w-7xl mx-auto px-4 h-full flex flex-col gap-4 justify-center items-center text-fog text-center">
             <div>
-              <p
-                className="uppercase text-lg"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+              <p className="uppercase text-lg" data-aos="fade-up">
                 your fitness family
               </p>
               <h1
                 className="capitalize text-fog"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="100"
               >
                 Transform your body. Empower your mind
               </h1>
@@ -44,7 +40,7 @@ const Home = () => {
             <p
               className="text-lg md:text-xl"
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
               Join a community that pushes limits, builds confidence and
               transforms lives. Starting fresh or leveling up, whatever level of
@@ -54,7 +50,7 @@ const Home = () => {
               <Link href="/contact">
                 <Button
                   data-aos="fade-right"
-                  data-aos-delay="400"
+                  data-aos-delay="300"
                   className="text-fog border border-crimson bg-crimson dark:bg-crimson hover:bg-fog dark:hover:bg-fog transition-all duration-500 text-semibold hover:text-charcoal py-4 capitalize"
                 >
                   join now
@@ -63,8 +59,8 @@ const Home = () => {
               <Link href="/about">
                 <Button
                   className="font-semibold bg-fog hover:bg-burntblue hover:text-fog text-charcoal py-4 transition-all duration-200"
-                  data-aos="fade-right"
-                  data-aos-delay="500"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
                 >
                   <span>Learn More</span>
                   <FaArrowRightLong />
@@ -74,40 +70,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="w-full h-screen" style={landingBg}>
-        <div className="h-full bg-steelgray/50 dark:bg-charcoal/70 flex flex-col justify-center items-center">
-          <div className="w-[90%] md:w-[80%] mx-auto flex flex-col gap-3 p-4">
-            <h2 className="text-lg md:text-xl">
-              Welcome to ifitness gym. No limits, no excuses, just results!
-            </h2>
-            <h1
-              className={`${anton.className} antialiased uppercase text-4xl md:text-5xl xl:text-7xl text-burntblue`}
-            >
-              Move better. Feel Stronger. Live Healthier.
-            </h1>
-            <p className="text-lg md:text-xl">
-              Join a community that pushes limits, builds confidence and
-              transforms lives. Starting fresh or leveling up, whatever level of
-              fitness you're at, your journey begins here.
-            </p>
-            <div className="flex gap-4 mx-auto">
-              <Button
-                variant="outline"
-                className="bg-crimson hover:bg-creamy transition-all duration-500 text-semibold mx-auto"
-              >
-                Join Now
-              </Button>
-              <Button
-                variant="outline"
-                className=" bg-crimson dark:bg-crimson hover:bg-fog dark:hover:bg-fog transition-all duration-500 text-semibold mx-auto"
-              >
-                Programs
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       {/* about section */}
       <div className="pt-10 lg:pt-20 px-4 sm:px-6 lg:px-8">
@@ -119,13 +81,13 @@ const Home = () => {
               data-aos="fade-right"
             >
               <div>
-                <h2 data-aos="fade-up" data-aos-delay="200">
-                  who we are
-                </h2>
-                <h3>commited to fitness that lasts a lifetime</h3>
+                <h2 data-aos="fade-up">who we are</h2>
+                <h3 data-aos="fade-right" data-aos-delay="100">
+                  commited to fitness that lasts a lifetime
+                </h3>
               </div>
 
-              <p data-aos="fade-up" data-aos-delay="400">
+              <p data-aos="fade-up" data-aos-delay="200">
                 We're not just a gym, we're a community. Our mission is to help
                 you train with purpose, push your limits, and become your
                 strongest self inside and out. Come sweat with us, grow with us
@@ -135,7 +97,7 @@ const Home = () => {
                 <Link href="/about">
                   <Button
                     data-aos="fade-right"
-                    data-aos-delay="600"
+                    data-aos-delay="300"
                     className="border border-crimson bg-crimson dark:bg-crimson hover:bg-fog dark:hover:bg-fog transition-all duration-500 text-semibold hover:text-charcoal capitalize"
                   >
                     learn more
@@ -161,16 +123,30 @@ const Home = () => {
       {/* quick benefits section */}
       <div className="pt-10 lg:pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="capitalize">best solution for your business</h2>
-          <p>
-            our platform provides you with the right tools to streamline your
-            business and personal finances
+          <div>
+            <h2 data-aos="fade-up">our programs</h2>
+            <h3
+              className="capitalize"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              Find the Right Fit for You
+            </h3>
+          </div>
+
+          <p data-aos="fade-up" data-aos-delay="100">
+            Discover a variety of workouts tailored to every fitness level and
+            designed to keep you motivated, challenged, and on track toward your
+            goals. Our programs are designed to challenge your body, strengthen
+            your mind, and keep you motivated every step of the way.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-4">
             {benefits.map((data) => (
               <Card
                 key={data.id}
                 className="h-full flex flex-col justify-center items-center border-burntblue dark:border-darkblue rounded-xl"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 <CardContent className="flex flex-col gap-2 items-center">
                   <div className="text-xl md:text-2xl text-crimson">
@@ -188,8 +164,6 @@ const Home = () => {
       {/* our programs */}
       <div className="pt-10 lg:pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="capitalize">our programs</h2>
-          <p>We offer different programs tailored to all fitness levels</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pt-4">
             {/* image */}
             <div className="mx-auto">
@@ -199,13 +173,13 @@ const Home = () => {
                 width={500}
                 height={333}
                 className="rounded-2xl shadow-[0_0_10px_#03486e] dark:shadow-[0_0_20px_#0568a6]"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in-right"
               ></Image>
             </div>
 
             {/* text */}
             <div className="flex flex-col gap-4">
-              <p>
+              <p data-aos="fade-up" data-aos-delay="100">
                 At our gym, we offer a variety of workout programs designed to
                 help you reach your goals and stay motivated. From strength and
                 conditioning to HIIT and cardio burnouts, our sessions are built
@@ -219,6 +193,8 @@ const Home = () => {
                 <Button
                   variant="outline"
                   className="border border-crimson bg-crimson dark:bg-crimson hover:bg-fog dark:hover:bg-fog hover:text-charcoal transition-all duration-500 uppercase font-semibold mx-auto"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
                 >
                   Learn more
                 </Button>
