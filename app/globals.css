@@ -5,11 +5,11 @@
 
 @theme inline {
   --color-crimson: #d72638;
-  --color-amber: #ffb400;
   --color-fog: #f4f4f5;
   --color-charcoal: #1c1c1e;
   --color-steelgray: #3a3a3c;
   --color-burntblue: #03486e;
+  --color-darkblue: #0568a6;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -122,5 +122,16 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 {
+    font-family: var(--font-h1);
+    @apply text-5xl lg:text-6xl xl:text-7xl font-bold text-darkblue capitalize;
+  }
+  h2 {
+    font-family: var(--font-h2);
+    @apply text-lg lg:text-xl font-bold uppercase text-burntblue dark:text-darkblue;
+  }
+  h3 {
+    @apply text-xl md:text-2xl font-semibold capitalize;
   }
 }

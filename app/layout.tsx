@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { sourceSans } from "@/fonts";
+import AosInit from "@/components/AosInit";
 
 interface LayoutProp {
   children: ReactNode;
@@ -12,7 +13,13 @@ const RootLayout = ({ children }: LayoutProp) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${sourceSans.className} antialiased overflow-x-hidden`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AosInit />
           <header>
             <Navbar />
           </header>

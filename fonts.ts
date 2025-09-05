@@ -10,6 +10,7 @@ export const anton = Anton({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-h1",
 });
 
 export const staatliches = Staatliches({

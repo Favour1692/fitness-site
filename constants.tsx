@@ -1,7 +1,11 @@
-import { navlinks, reviews, programs } from "./type";
+import { navlinks, reviews, programs, faq, Social, bg } from "./type";
 import { FaCalendarAlt, FaBolt, FaHome } from "react-icons/fa";
 import { LuDumbbell } from "react-icons/lu";
 import { benefit } from "./type";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const navdata: navlinks[] = [
   {
@@ -26,11 +30,21 @@ export const navdata: navlinks[] = [
   },
 ];
 
-export const landingBg = {
+export const landingBg: bg = {
   backgroundImage: "url('/homeLanding.webp')",
   backgroundPosition: "center center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
+};
+export const offerbg: bg = {
+  backgroundImage: "url('/offer.webp')",
+  backgroundPosition: "top center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+};
+export const overlay: bg = {
+  backgroundImage: "url('/overlay2.jpg')",
+  backgroundRepeat: "repeat",
 };
 
 export const testimonial: reviews[] = [
@@ -118,5 +132,55 @@ export const program: programs[] = [
     id: 7,
     image: "/hiit.webp",
     title: "yoga and flexibility",
+  },
+];
+
+export const FAQs: faq[] = [
+  {
+    value: "item-1",
+    question: "How do I open an account?",
+    answer:
+      "Opening an account is easy and takes less than 5 minutes. Just download our app, provide your details, verify your identity and you're ready to start transacting.",
+  },
+  {
+    value: "item-2",
+    question: "Is my money safe with you?",
+    answer:
+      "Absolutely, your funds are secure. We use bank-level encryption, two-factor authentication, and are fully compliant with local financial regulations to keep your money and data protected.",
+  },
+  {
+    value: "item-3",
+    question: "What kind of services do you offer?",
+    answer:
+      "We offer savings, payments, transfers and financial planning tools. From managing personal finances to large business transactions, we've got you covered.",
+  },
+  {
+    value: "item-4",
+    question: "Are there any fees?",
+    answer:
+      "Most of our core services are free. We may charge small transaction or service fees in specific cases which are always clearly disclosed before you proceed.",
+  },
+];
+
+export const socials: Social[] = [
+  {
+    id: 1,
+    logo: <FaLinkedinIn />,
+    href: "#",
+  },
+  {
+    id: 2,
+    logo: <FaSquareXTwitter />,
+    href: "#",
+  },
+  {
+    id: 3,
+    logo: <FaInstagramSquare />,
+    href: "#",
+  },
+  {
+    id: 4,
+    logo: <FaFacebook />,
+    href: "#",
   },
 ];
